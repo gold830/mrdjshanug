@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Lobster Two", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-color: #1A1A2E;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Nav Bar */
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #2EC4B6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    z-index: 999;
+    position: fixed;
+    border-bottom: 2px solid #1A1A2E;
+}
+
+.navlogo h1 {
+    font: 20px;
+    font-weight: 600;
+    color: #1A1A2E;
+}
+
+.hamburger {
+    display: none;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    display: block;
+    color: #1A1A2E;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.navbar ul li a:hover {
+    color: #2EC4B6;
+    background: #1A1A2E;
+}
+
+.navbar ul li .active {
+    color: #2EC4B6;
+    background: #1A1A2E;
+}
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background-color: #1A1A2E;
+        margin: 6px 0;
+    }
+
+    .navbar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #2EC4B6;
+        transition: 0.2s;
+        overflow: hidden;
+        z-index: 999;
+    }
+
+    .navbar.active {
+        height: 450px;
+    }
+
+    .navbar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: .5s;
+        opacity: 0;
+    }
+
+    .navbar.active ul{
+        opacity: 1;
+    }
+
+    .navbar ul a {
+        margin-bottom: 12px;
+    }
+}
+
+/* Nav Bar */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hero Section */
+
+.hero {
+    height: 100vh;
+    background-image:linear-gradient(#1a1a2ec9, #1a1a2eb0), url(pics/ShanHero.JPG.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero .herocontent {
+    text-align: center;
+    width: 50%;
+}
+
+.hero .herocontent h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #2EC4B6;
+    display: none;
+
+}
+
+.hero .herocontent h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.hero .herocontent p {
+    font-size: 20px;
+    color: #2EC4B6;
+}
+
+/* Hero Section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About Section */
+
+.aboutsection {
+    width: 100%;
+}
+
+.aboutsection .aboutcontainer {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.aboutsection .aboutcontainer .title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.aboutsection .aboutcontainer .title h1 {
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.aboutsection .aboutcontainer .title h1::after {
+    content: "";
+    height: 5px;
+    width: 50px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+
+.aboutsection .aboutcontainer .content {
+    float: left;
+    width: 55%;
+}
+
+.aboutsection .aboutcontainer .content .article p {
+    color: #2EC4B6;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.aboutsection .aboutcontainer .imagesection {
+    float: right;
+    width: 40%;
+}
+
+.aboutsection .aboutcontainer .imagesection img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #2EC4B6;
+    border-radius: 25px;
+}
+
+.aboutsection .aboutcontainer .content .article .button {
+    margin-top: 30px;
+}
+
+.aboutsection .aboutcontainer .content .article .button a {
+    text-decoration: none;
+    padding: 8px 25px;
+    background: #2EC4B6;
+    border-radius: 40px;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.aboutsection .aboutcontainer .content .article .button a:hover {
+    background-color: white;
+    color: #2EC4B6;
+}
+
+.aboutsection .aboutcontainer .socialmediaicons {
+    width: 100%;
+    clear: both;
+    margin-top: 50px;
+    text-align: center;
+    display: inline-block;
+}
+
+.aboutsection .aboutcontainer .socialmediaicons i {
+    color: white;
+    font-size: 22px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    line-height: 45px;
+    text-align: center;
+    background-color: #1A1A2E;
+    margin: 0 5px;
+}
+
+.aboutsection .aboutcontainer .socialmediaicons i:hover {
+    color: #ffffff;
+    transition: 1s ease;
+    transform: rotate(360deg);
+    background-color: #2EC4B6;
+}
+
+@media screen and (max-width: 768px) {
+    .aboutsection .aboutcontainer {
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+
+    .aboutsection .aboutcontainer .content {
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .aboutsection .aboutcontainer .imagesection {
+        float: none;
+        width: 100%;
+        margin-top: 40px;
+        justify-content: center;
+    }
+
+    .aboutsection .aboutcontainer .imagesection img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+}
+
+
+/* About Section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Services Section */
+
+.services {
+    width: 90%;
+    background-color: #2EC4B6;
+    border-radius: 25px;
+    padding: 30px 20px;
+    margin-left: 5%;
+    margin-bottom: 20px;
+}
+
+.services .boxheading {
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.services .boxcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 15px;
+    padding: 20px;
+}
+
+.services .boxcontainer .box {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #2EC4B6;
+    border: 2px solid #1A1A2E;
+    text-align: center;
+}
+
+.services .boxcontainer .box .boxicon {
+    margin-top: 10px;
+}
+
+.services .boxcontainer .box .boxicon span {
+    margin: 10px 0;
+    font-size: 35px;
+    color: #1A1A2E;
+}
+
+.services .boxcontainer .box .title {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.services .boxcontainer .box p {
+    font-size: 18px;
+    color: #1A1A2E;
+    padding: 10px;
+}
+
+.services .boxcontainer .box a {
+    text-decoration: none;
+    padding: 8px 25px;
+    background-color: #1A1A2E;
+    border-radius: 40px;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    display: block;
+    transition: .3s;
+    margin-top: 30px;
+}
+
+.services .boxcontainer .box a:hover {
+    background-color: white;
+    color: #1A1A2E;
+}
+
+
+/* Services Section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Section */
+
+.footercontainer {
+    color: #2EC4B6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footercontainer .footerflexrow {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footercontainer .footerflexrow li {
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.footercontainer .footerflexrow li a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.footercontainer .footerflexrow li i {
+    cursor: pointer;
+    color: white;
+    font-size: 22px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    line-height: 45px;
+    text-align: center;
+    background-color: #1A1A2E;
+    margin: 0 5px;
+}
+
+.footercontainer .footerflexrow li i:hover {
+    color: #ffffff;
+    transition: 1s ease;
+    transform: rotate(360deg);
+    background-color: #2EC4B6;
+}
+
+.footercontainer p {
+    text-align: center;
+    background-color: #2EC4B6;
+    color: #1A1A2E;
+    width: 100%;
+    padding: 20px 0;
+}
+
+
+/* Services Section */
