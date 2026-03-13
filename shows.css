@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: "Lobster Two", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
     box-sizing: border-box;
 }
 
 body {
     
-    background-color: #F0EADC;
+    background-color: #0D1B1E;
 }
 
 
@@ -34,7 +36,7 @@ body {
 header {
     width: 100%;
     height: 80px;
-    background-color: #80011F;
+    background-color: #0D1B1E;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,9 +47,10 @@ header {
 }
 
 .navlogo h1 {
-    font: 20px;
-    font-weight: 600;
-    color: #F0EADC;
+    font: 16px;
+    font-weight: 700;
+    color: #B2FFA9;
+    font-family: "Lobster Two", sans-serif;
 }
 
 .hamburger {
@@ -60,23 +63,25 @@ header {
 
 .navbar ul li a {
     display: block;
-    color: #F0EADC;
-    border: 1px solid #80011F;
-    font-size: 18px;
-    padding: 10px 45px;
+    color: #B2FFA9;
+    border: 1px solid #B2FFA9;
+    font-size: 16px;
+    padding: 5px 25px;
     border-radius: 50px;
     transition: 0.2s;
     margin: 0 5px;
 }
 
 .navbar ul li a:hover {
-    color: #F0EADC;
-    border: 1px solid #F0EADC;
+    color: #0D1B1E;
+    background-color: #B2FFA9;
+    border: 1px solid #B2FFA9;
 }
 
 .navbar ul li .active {
-    color: #F0EADC;
-    border: 1px solid #F0EADC;
+    color: #0D1B1E;
+    background-color: #B2FFA9;
+    border: 1px solid #B2FFA9;
 }
 
 @media only screen and (max-width: 1320px) {
@@ -100,7 +105,7 @@ header {
     .hamburger .line {
         width: 30px;
         height: 3px;
-        background-color: #F0EADC;
+        background-color: #B2FFA9;
         margin: 6px 0;
     }
 
@@ -111,7 +116,7 @@ header {
         right: 0;
         right: 0;
         width: 100vw;
-        background-color: #80011F;
+        background-color: #0D1B1E;
         transition: 0.2s;
         overflow: hidden;
         z-index: 999;
@@ -192,8 +197,8 @@ header {
 .showscontainer .groups li {
     position: relative;
     list-style: none;
-    background-color: #80011F;
-    border: 4px solid #80011F;
+    background-color: #B2FFA9;
+    border: 4px solid #B2FFA9;
     border-radius: 5px;
     box-shadow: 0 4px 14px 0 rgb(84, 84, 84);
     overflow: hidden;
@@ -263,6 +268,15 @@ header {
     background-position: center !important;
 }
 
+.showscontainer .groups .showcard .imagesession .imageK {
+    width: 280px;
+    height: 220px;
+    display: block;
+    background-image: url(pics/Kenlon.jpeg);
+    background-size: cover !important;
+    background-position: center !important;
+}
+
 .showscontainer .groups .showcard .metasession {
     position: relative;
     padding: 15px;
@@ -279,7 +293,7 @@ header {
     list-style: none;
     text-decoration: none;
     font-size: 10px;
-    color: #F0EADC;
+    color: #0D1B1E;
 }
 
 .showscontainer .groups .showcard .metasession .metahead .per span,
@@ -287,7 +301,7 @@ header {
     display: block;
     font-size: 10px;
     text-align: left;
-    color: #F0EADC;
+    color: #0D1B1E;
 }
 
 .showscontainer .groups .showcard .metasession .metahead .per input {
@@ -295,21 +309,21 @@ header {
     appearance: none;
     height: 5px;
     border-radius: 5px;
-    background-color: #F0EADC;
+    background-color: #0D1B1E;
     margin-bottom: 4px;
     overflow: hidden;
 }
 
 .showscontainer .groups .showcard .metasession .metahead .per input::-webkit-slider-thumb {
     -webkit-appearance: none;
-    box-shadow: -100px 0 0 10px #1e1010;
+    box-shadow: -100px 0 0 10px #0D1B1E;
 }
 
 .showscontainer .groups .showcard .metasession .showbody .title {
     height: 40px;
     overflow: hidden;
     font-size: 25px;
-    color: #F0EADC;
+    color: #0D1B1E;
 }
 
 .showscontainer .groups .showcard .metasession .showbody .desc {
@@ -317,7 +331,7 @@ header {
     overflow: hidden;
     font-size: 20px;
     margin-bottom: 10px;
-    color: #F0EADC;
+    color: #0D1B1E;
 }
 
 
@@ -346,7 +360,7 @@ header {
 @media screen and (max-width:780px){
     .showscontainer .groups {
         width: 90%;
-        height: 750px;
+        height: auto;
     }
 
     .showscontainer .groups li:hover {
@@ -387,6 +401,10 @@ header {
     }
 
     .showscontainer .groups .showcard .imagesession .imageB {
+        width: 100%;
+    }
+
+    .showscontainer .groups .showcard .imagesession .imageK {
         width: 100%;
     }
 }
@@ -437,7 +455,7 @@ header {
 /* Footer Section */
 
 .footercontainer {
-    color: #80011F;
+    color: #B2FFA9;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -459,32 +477,32 @@ header {
 .footercontainer .footerflexrow li a {
     font-size: 20px;
     font-weight: 500;
-    color: #80011F;
+    color: #B2FFA9;
 }
 
 .footercontainer .footerflexrow li i {
-    color: #80011F;
+    color: #B2FFA9;
     font-size: 22px;
     height: 45px;
     width: 45px;
     border-radius: 50%;
     line-height: 45px;
     text-align: center;
-    border: 1px solid #80011F;
+    border: 1px solid #B2FFA9;
     margin: 0 5px;
 }
 
 .footercontainer .footerflexrow li i:hover {
-    color: #F0EADC;
+    color: #0D1B1E;
     transition: 1s ease;
     transform: rotate(360deg);
-    background-color: #80011F;
+    background-color: #B2FFA9;
 }
 
 .footercontainer p {
     text-align: center;
-    background-color: #80011F;
-    color: #F0EADC;
+    background-color: #B2FFA9;
+    color: #0D1B1E;
     width: 100%;
     padding: 20px 0;
 }
