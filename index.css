@@ -404,6 +404,43 @@ header {
     }
 }
 
+.career {
+    min-height: 40vh;
+    width: 100%;
+}
+
+.career .article {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.career .article h2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-family: "Lobster Two", sans-serif;
+    color: #B2FFA9;
+
+}
+
+.career .article h2::after {
+    content: "";
+    height: 5px;
+    width: 50px;
+    background-color: #B2FFA9;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+
+.career .article p {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
 
 /* About Section */
 
