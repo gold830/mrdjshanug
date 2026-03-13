@@ -11,7 +11,7 @@
 
 body {
     
-    background-color: #1A1A2E;
+    background-color: #F0EADC;
 }
 
 
@@ -34,20 +34,19 @@ body {
 header {
     width: 100%;
     height: 80px;
-    background-color: #2EC4B6;
+    background-color: #80011F;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 100px;
     z-index: 999;
     position: fixed;
-    border-bottom: 2px solid #1A1A2E;
 }
 
 .navlogo h1 {
     font: 20px;
     font-weight: 600;
-    color: #1A1A2E;
+    color: #F0EADC;
 }
 
 .hamburger {
@@ -60,22 +59,23 @@ header {
 
 .navbar ul li a {
     display: block;
-    color: #1A1A2E;
+    color: #F0EADC;
+    border: 1px solid #80011F;
     font-size: 18px;
-    padding: 10px 25px;
+    padding: 10px 45px;
     border-radius: 50px;
     transition: 0.2s;
     margin: 0 5px;
 }
 
 .navbar ul li a:hover {
-    color: #2EC4B6;
-    background: #1A1A2E;
+    color: #F0EADC;
+    border: 1px solid #F0EADC;
 }
 
 .navbar ul li .active {
-    color: #2EC4B6;
-    background: #1A1A2E;
+    color: #F0EADC;
+    border: 1px solid #F0EADC;
 }
 
 @media only screen and (max-width: 1320px) {
@@ -99,7 +99,7 @@ header {
     .hamburger .line {
         width: 30px;
         height: 3px;
-        background-color: #1A1A2E;
+        background-color: #F0EADC;
         margin: 6px 0;
     }
 
@@ -110,7 +110,7 @@ header {
         right: 0;
         right: 0;
         width: 100vw;
-        background-color: #2EC4B6;
+        background-color: #80011F;
         transition: 0.2s;
         overflow: hidden;
         z-index: 999;
@@ -185,7 +185,7 @@ header {
 
 .hero {
     height: 100vh;
-    background-image:linear-gradient(#1a1a2ec9, #1a1a2eb0), url(pics/ShanHero.JPG.jpeg);
+    background-image:linear-gradient(#3d010fc0, #0000005c), url(pics/ShanHero.JPG.jpeg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -202,7 +202,7 @@ header {
 .hero .herocontent h1 {
     font-size: 40px;
     margin-bottom: 15px;
-    color: #2EC4B6;
+    color: #F0EADC;
     display: none;
 
 }
@@ -210,12 +210,12 @@ header {
 .hero .herocontent h2 {
     font-size: 25px;
     margin-bottom: 15px;
-    color: #ffffff;
+    color: #F0EADC;
 }
 
 .hero .herocontent p {
     font-size: 20px;
-    color: #2EC4B6;
+    color: #ffffff;
 }
 
 /* Hero Section */
@@ -284,14 +284,14 @@ header {
 .aboutsection .aboutcontainer .title h1 {
     text-transform: uppercase;
     font-size: 25px;
-    color: #ffffff;
+    color: #80011F;
 }
 
 .aboutsection .aboutcontainer .title h1::after {
     content: "";
     height: 5px;
     width: 50px;
-    background-color: #ffffff;
+    background-color: #80011F;
     border-radius: 25px;
     display: block;
     margin: auto;
@@ -303,7 +303,7 @@ header {
 }
 
 .aboutsection .aboutcontainer .content .article p {
-    color: #2EC4B6;
+    color: black;
     font-size: 20px;
     margin-bottom: 15px;
 }
@@ -316,7 +316,7 @@ header {
 .aboutsection .aboutcontainer .imagesection img {
     width: 100%;
     height: auto;
-    border: 2px solid #2EC4B6;
+    border: 4px solid #80011F;
     border-radius: 25px;
 }
 
@@ -327,16 +327,17 @@ header {
 .aboutsection .aboutcontainer .content .article .button a {
     text-decoration: none;
     padding: 8px 25px;
-    background: #2EC4B6;
+    background: #80011F;
     border-radius: 40px;
-    color: white;
+    color: #F0EADC;
+    border: 1px solid #80011F;
     font-size: 20px;
     letter-spacing: 1.5px;
 }
 
 .aboutsection .aboutcontainer .content .article .button a:hover {
-    background-color: white;
-    color: #2EC4B6;
+    background-color: #F0EADC;
+    color: #80011F;
 }
 
 .aboutsection .aboutcontainer .socialmediaicons {
@@ -348,22 +349,22 @@ header {
 }
 
 .aboutsection .aboutcontainer .socialmediaicons i {
-    color: white;
+    color: #80011F;
     font-size: 22px;
     height: 45px;
     width: 45px;
     border-radius: 50%;
     line-height: 45px;
     text-align: center;
-    background-color: #1A1A2E;
+    border: 1px solid #80011F;
     margin: 0 5px;
 }
 
 .aboutsection .aboutcontainer .socialmediaicons i:hover {
-    color: #ffffff;
+    color: #F0EADC;
     transition: 1s ease;
     transform: rotate(360deg);
-    background-color: #2EC4B6;
+    background-color: #80011F;
 }
 
 @media screen and (max-width: 768px) {
@@ -427,7 +428,7 @@ header {
 
 .services {
     width: 90%;
-    background-color: #2EC4B6;
+    background-color: #80011F;
     border-radius: 25px;
     padding: 30px 20px;
     margin-left: 5%;
@@ -436,7 +437,7 @@ header {
 
 .services .boxheading {
     font-size: 25px;
-    color: #ffffff;
+    color: #F0EADC;
     text-align: center;
     padding: 20px 0;
 }
@@ -451,8 +452,7 @@ header {
 .services .boxcontainer .box {
     padding: 10px;
     border-radius: 10px;
-    background-color: #2EC4B6;
-    border: 2px solid #1A1A2E;
+    background-color: #F0EADC;
     text-align: center;
 }
 
@@ -463,26 +463,27 @@ header {
 .services .boxcontainer .box .boxicon span {
     margin: 10px 0;
     font-size: 35px;
-    color: #1A1A2E;
+    color: #80011F;
 }
 
 .services .boxcontainer .box .title {
-    color: #ffffff;
+    color: #80011F;
     font-size: 25px;
 }
 
 .services .boxcontainer .box p {
     font-size: 18px;
-    color: #1A1A2E;
+    color: black;
     padding: 10px;
 }
 
 .services .boxcontainer .box a {
     text-decoration: none;
     padding: 8px 25px;
-    background-color: #1A1A2E;
+    background-color: #80011F;
+    border: 1px solid #80011F;
     border-radius: 40px;
-    color: white;
+    color: #F0EADC;
     font-size: 20px;
     letter-spacing: 1.5px;
     display: block;
@@ -491,8 +492,8 @@ header {
 }
 
 .services .boxcontainer .box a:hover {
-    background-color: white;
-    color: #1A1A2E;
+    background-color: #F0EADC;
+    color: #80011F;
 }
 
 
@@ -523,7 +524,7 @@ header {
 /* Footer Section */
 
 .footercontainer {
-    color: #2EC4B6;
+    color: #80011F;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -543,38 +544,37 @@ header {
 }
 
 .footercontainer .footerflexrow li a {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 500;
-    color: #ffffff;
+    color: #80011F;
 }
 
 .footercontainer .footerflexrow li i {
-    cursor: pointer;
-    color: white;
+    color: #80011F;
     font-size: 22px;
     height: 45px;
     width: 45px;
     border-radius: 50%;
     line-height: 45px;
     text-align: center;
-    background-color: #1A1A2E;
+    border: 1px solid #80011F;
     margin: 0 5px;
 }
 
 .footercontainer .footerflexrow li i:hover {
-    color: #ffffff;
+    color: #F0EADC;
     transition: 1s ease;
     transform: rotate(360deg);
-    background-color: #2EC4B6;
+    background-color: #80011F;
 }
 
 .footercontainer p {
     text-align: center;
-    background-color: #2EC4B6;
-    color: #1A1A2E;
+    background-color: #80011F;
+    color: #F0EADC;
     width: 100%;
     padding: 20px 0;
 }
 
 
-/* Services Section */
+/* Footer Section */
