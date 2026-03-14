@@ -43,6 +43,7 @@ header {
     padding: 0 100px;
     z-index: 999;
     position: fixed;
+    top: 0;
 }
 
 .navlogo h1 {
@@ -613,6 +614,7 @@ header {
     text-align: center;
     border: 1px solid #B2FFA9;
     margin: 0 5px;
+    cursor: pointer;
 }
 
 .footercontainer .footerflexrow li i:hover {
